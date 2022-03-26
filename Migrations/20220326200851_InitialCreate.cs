@@ -47,6 +47,16 @@ namespace student_platform.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.InsertData(
+                table: "Posts",
+                columns: new[] { "PostId", "Created", "Status", "Text", "Title" },
+                values: new object[] { 1, new DateTime(2022, 3, 26, 21, 8, 51, 15, DateTimeKind.Local).AddTicks(2122), 0, "This is post 1", "Post 1" });
+
+            migrationBuilder.InsertData(
+                table: "Comments",
+                columns: new[] { "CommentId", "Created", "Likes", "PostId", "Text" },
+                values: new object[] { 1, new DateTime(2022, 3, 26, 21, 8, 51, 15, DateTimeKind.Local).AddTicks(2453), 0, 1, "This is comment 1" });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Comments_PostId",
                 table: "Comments",

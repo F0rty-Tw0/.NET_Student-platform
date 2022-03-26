@@ -11,7 +11,7 @@ using student_platform.Data;
 namespace student_platform.Migrations
 {
     [DbContext(typeof(StudentsDBContext))]
-    [Migration("20220321095550_InitialCreate")]
+    [Migration("20220326200851_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,6 +44,16 @@ namespace student_platform.Migrations
                     b.HasIndex("PostId");
 
                     b.ToTable("Comments");
+
+                    b.HasData(
+                        new
+                        {
+                            CommentId = 1,
+                            Created = new DateTime(2022, 3, 26, 21, 8, 51, 15, DateTimeKind.Local).AddTicks(2453),
+                            Likes = 0,
+                            PostId = 1,
+                            Text = "This is comment 1"
+                        });
                 });
 
             modelBuilder.Entity("student_platform.Models.Entities.Post.Post", b =>
@@ -70,6 +80,16 @@ namespace student_platform.Migrations
                     b.HasKey("PostId");
 
                     b.ToTable("Posts");
+
+                    b.HasData(
+                        new
+                        {
+                            PostId = 1,
+                            Created = new DateTime(2022, 3, 26, 21, 8, 51, 15, DateTimeKind.Local).AddTicks(2122),
+                            Status = 0,
+                            Text = "This is post 1",
+                            Title = "Post 1"
+                        });
                 });
 
             modelBuilder.Entity("student_platform.Models.Entities.Post.Comment", b =>
