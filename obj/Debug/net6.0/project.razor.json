@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\student-platform.csproj",
+  "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\student-platform.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,88 +16298,128 @@
   "RootNamespace": "student_platform",
   "Documents": [
     {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Edit.cshtml",
-      "TargetPath": "Views\\Comments\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\AddPost.cshtml",
-      "TargetPath": "Views\\Posts\\AddPost.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\EditPost.cshtml",
-      "TargetPath": "Views\\Posts\\EditPost.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Index.cshtml",
-      "TargetPath": "Views\\Comments\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\_CreateEditPost.cshtml",
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\_CreateEditPost.cshtml",
       "TargetPath": "Views\\Posts\\_CreateEditPost.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\index.cshtml",
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\index.cshtml",
       "TargetPath": "Views\\Posts\\index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\Post.cshtml",
-      "TargetPath": "Views\\Posts\\Post.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\_ViewImports.cshtml",
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Delete.cshtml",
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Delete.cshtml",
       "TargetPath": "Views\\Comments\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Details.cshtml",
-      "TargetPath": "Views\\Comments\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Create.cshtml",
-      "TargetPath": "Views\\Comments\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\Post.cshtml",
+      "TargetPath": "Views\\Posts\\Post.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Details.cshtml",
+      "TargetPath": "Views\\Comments\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Index.cshtml",
+      "TargetPath": "Views\\Comments\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\AddPost.cshtml",
+      "TargetPath": "Views\\Posts\\AddPost.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Posts\\EditPost.cshtml",
+      "TargetPath": "Views\\Posts\\EditPost.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Edit.cshtml",
+      "TargetPath": "Views\\Comments\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Comments\\Create.cshtml",
+      "TargetPath": "Views\\Comments\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     }
   ],

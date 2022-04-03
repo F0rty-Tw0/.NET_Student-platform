@@ -1,17 +1,22 @@
 using Microsoft.EntityFrameworkCore;
 using student_platform.Data;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
+string connectionString = builder.Configuration.GetConnectionString("StudentContext");
 
 builder.Services.AddDbContext<StudentsDBContext>(options =>
+    options.UseSqlite(connectionString));
 
-    options.UseSqlite(builder.Configuration.GetConnectionString("StudentContext")));
-
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<StudentsDBContext>(); builder.Services.AddDbContext<StudentsDBContext>(options =>
+    options.UseSqlServer(connectionString));
+    
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<StudentsDBContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("StudentsContext")));
+    options.UseSqlite(connectionString));
 
 
 
@@ -29,7 +34,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
