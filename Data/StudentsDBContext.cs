@@ -69,6 +69,7 @@ namespace student_platform.Data
             CommentId = 1,
             PostId = 1,
             Text = "This is comment 1",
+            UserId = "1",
             Created = DateTime.Now
           }
           );

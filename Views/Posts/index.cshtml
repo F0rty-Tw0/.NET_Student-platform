@@ -1,4 +1,4 @@
-@model IEnumerable<student_platform.Models.Entities.Post.Post>
+@model student_platform.Models.Entities.Post.PostIndexVm
 
 @{
     ViewData["Title"] = "Courses";
@@ -9,29 +9,37 @@
 <p>
     <a asp-action="AddPost">Create New</a>
 </p>
+
+<form asp-controller="Posts" asp-action="Index" method="get">
+    <p>
+        Title: <input type="text" name="SearchString" value="@Model.SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.PostId)
+                @Html.DisplayNameFor(model => model.Posts.First().PostId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                @Html.DisplayNameFor(model => model.Posts.First().Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Text)
+                @Html.DisplayNameFor(model => model.Posts.First().Text)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Created)
+                @Html.DisplayNameFor(model => model.Posts.First().Created)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Status)
+                @Html.DisplayNameFor(model => model.Posts.First().Status)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Posts)
         {
             <tr>
                 <td>

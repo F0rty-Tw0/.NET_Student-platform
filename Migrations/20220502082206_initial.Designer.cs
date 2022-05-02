@@ -11,7 +11,7 @@ using student_platform.Data;
 namespace student_platform.Migrations
 {
     [DbContext(typeof(StudentsDBContext))]
-    [Migration("20220502071158_initial")]
+    [Migration("20220502082206_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -136,14 +136,14 @@ namespace student_platform.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2b0a2147-d6c3-458e-b412-9c39409cfa59",
+                            ConcurrencyStamp = "793cbef0-1062-4672-b763-dd1043ec1864",
                             Email = "art@art.art",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedUserName = "ART@ART.ART",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGjEZB7oZCZC3uuJufDlQFxKtAecLo30UinqdXGqzIhBL6yTIiCvJgWfPRUvjhHCFg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKUq3ass5rWe+rg1pBjgloyuNB+QL2vAZ8NNuGgVDvMO+ChYHX2WRcbF5KsWiGsE0Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4b220586-caf9-441c-a302-425a8e53f429",
+                            SecurityStamp = "baeab643-3cd0-4393-8e66-98514a1693db",
                             TwoFactorEnabled = false,
                             UserName = "art@art.art"
                         },
@@ -151,14 +151,14 @@ namespace student_platform.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1143d48a-fe8e-447b-a860-eb28b620ea7f",
+                            ConcurrencyStamp = "ddc459d5-7fc4-47af-a035-d999d8cca690",
                             Email = "test@kea.dk",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedUserName = "TEST@KEA.DK",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFNAmf8UjErlxP3iRaAULSpISjixOeYoTHO4YMZ8jWY/v2HNFrkU2n6b96G2yBu5ZA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEC9i9Q2foAiiOOV0l+o5NqhuqsO0+gb7EDdw1QeTvZrlWFOx34U1JYt2sCv2DGoj4Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8a1f03bc-f084-4aa2-ab2f-c75e17b61821",
+                            SecurityStamp = "aa0584fa-ae7b-425a-b03f-068371bead12",
                             TwoFactorEnabled = false,
                             UserName = "test@kea.dk"
                         });
@@ -263,9 +263,14 @@ namespace student_platform.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("CommentId");
 
                     b.HasIndex("PostId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
 
@@ -273,10 +278,11 @@ namespace student_platform.Migrations
                         new
                         {
                             CommentId = 1,
-                            Created = new DateTime(2022, 5, 2, 9, 11, 58, 70, DateTimeKind.Local).AddTicks(2914),
+                            Created = new DateTime(2022, 5, 2, 10, 22, 6, 182, DateTimeKind.Local).AddTicks(2498),
                             Likes = 0,
                             PostId = 1,
-                            Text = "This is comment 1"
+                            Text = "This is comment 1",
+                            UserId = "1"
                         });
                 });
 
@@ -314,7 +320,7 @@ namespace student_platform.Migrations
                         new
                         {
                             PostId = 1,
-                            Created = new DateTime(2022, 5, 2, 9, 11, 58, 55, DateTimeKind.Local).AddTicks(8675),
+                            Created = new DateTime(2022, 5, 2, 10, 22, 6, 165, DateTimeKind.Local).AddTicks(1422),
                             Status = 0,
                             Text = "This is post 1",
                             Title = "Post 1",
@@ -381,7 +387,13 @@ namespace student_platform.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
                     b.Navigation("Post");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("student_platform.Models.Entities.Post.Post", b =>

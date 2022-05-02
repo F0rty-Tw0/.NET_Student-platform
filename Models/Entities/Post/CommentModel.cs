@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace student_platform.Models.Entities.Post
 {
@@ -11,12 +12,11 @@ namespace student_platform.Models.Entities.Post
     public string Text { get; set; }
     public int Likes { get; set; }
 
-    public int PostId { get; set; }
-
-    public Post Post { get; set; }
-
     [DataType(DataType.Date)]
     public DateTime Created { get; set; }
-
+    public int PostId { get; set; }
+    public Post Post { get; set; }
+    public string UserId { get; set; }
+    public IdentityUser? User { get; set; }
   }
 }

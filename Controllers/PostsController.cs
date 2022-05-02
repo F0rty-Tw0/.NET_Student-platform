@@ -16,15 +16,26 @@ public class PostsController : Controller
     _context = context;
     _userManager = userManager;
   }
+
   [AllowAnonymous]
-  public IActionResult Index()
+  public IActionResult Index(string SearchString = "")
   {
-    var posts = from post in _context.Posts select post;
+    if (SearchString == null)
+    {
+      SearchString = "";
+    }
+    var posts = from p in _context.Posts select p;
 
-    posts = posts.Include(y => y.User);
+    posts = posts.Where(x => x.Title.Contains(SearchString) ||
+        x.Text.Contains(SearchString)).Include(y => y.User);
 
+    var vm = new PostIndexVm
+    {
+      Posts = posts.ToList(),
+      SearchString = SearchString
+    };
 
-    return View(posts.ToList());
+    return View(vm);
   }
   public IActionResult Post()
   {
@@ -55,14 +66,15 @@ public class PostsController : Controller
 
   public IActionResult EditPost(int id)
   {
-    Post p = _context.Posts.Find(id);
+    Post p = _context.Posts.Include(x => x.Comments).ThenInclude(x => x.User).First(x => x.PostId == id);
     return View(p);
   }
 
   [HttpPost]
-  public IActionResult EditPost(int id, [Bind("Id", "Title", "Text")] Post post)
+  public IActionResult EditPost(int id, [Bind("PostId", "Title", "Text")] Post post)
   {
     if (ModelState.IsValid)
+      Console.WriteLine(post.PostId);
     {
       _context.Posts.Update(post);
       _context.SaveChanges();

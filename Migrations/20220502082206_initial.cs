@@ -184,12 +184,18 @@ namespace student_platform.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Text = table.Column<string>(type: "TEXT", maxLength: 500, nullable: false),
                     Likes = table.Column<int>(type: "INTEGER", nullable: false),
+                    Created = table.Column<DateTime>(type: "TEXT", nullable: false),
                     PostId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Created = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    UserId = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Comments", x => x.CommentId);
+                    table.ForeignKey(
+                        name: "FK_Comments_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Comments_Posts_PostId",
                         column: x => x.PostId,
@@ -201,22 +207,22 @@ namespace student_platform.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "1", 0, "2b0a2147-d6c3-458e-b412-9c39409cfa59", "art@art.art", true, false, null, null, "ART@ART.ART", "AQAAAAEAACcQAAAAEGjEZB7oZCZC3uuJufDlQFxKtAecLo30UinqdXGqzIhBL6yTIiCvJgWfPRUvjhHCFg==", null, false, "4b220586-caf9-441c-a302-425a8e53f429", false, "art@art.art" });
+                values: new object[] { "1", 0, "793cbef0-1062-4672-b763-dd1043ec1864", "art@art.art", true, false, null, null, "ART@ART.ART", "AQAAAAEAACcQAAAAEKUq3ass5rWe+rg1pBjgloyuNB+QL2vAZ8NNuGgVDvMO+ChYHX2WRcbF5KsWiGsE0Q==", null, false, "baeab643-3cd0-4393-8e66-98514a1693db", false, "art@art.art" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "2", 0, "1143d48a-fe8e-447b-a860-eb28b620ea7f", "test@kea.dk", true, false, null, null, "TEST@KEA.DK", "AQAAAAEAACcQAAAAEFNAmf8UjErlxP3iRaAULSpISjixOeYoTHO4YMZ8jWY/v2HNFrkU2n6b96G2yBu5ZA==", null, false, "8a1f03bc-f084-4aa2-ab2f-c75e17b61821", false, "test@kea.dk" });
+                values: new object[] { "2", 0, "ddc459d5-7fc4-47af-a035-d999d8cca690", "test@kea.dk", true, false, null, null, "TEST@KEA.DK", "AQAAAAEAACcQAAAAEC9i9Q2foAiiOOV0l+o5NqhuqsO0+gb7EDdw1QeTvZrlWFOx34U1JYt2sCv2DGoj4Q==", null, false, "aa0584fa-ae7b-425a-b03f-068371bead12", false, "test@kea.dk" });
 
             migrationBuilder.InsertData(
                 table: "Posts",
                 columns: new[] { "PostId", "Created", "Status", "Text", "Title", "UserId" },
-                values: new object[] { 1, new DateTime(2022, 5, 2, 9, 11, 58, 55, DateTimeKind.Local).AddTicks(8675), 0, "This is post 1", "Post 1", "1" });
+                values: new object[] { 1, new DateTime(2022, 5, 2, 10, 22, 6, 165, DateTimeKind.Local).AddTicks(1422), 0, "This is post 1", "Post 1", "1" });
 
             migrationBuilder.InsertData(
                 table: "Comments",
-                columns: new[] { "CommentId", "Created", "Likes", "PostId", "Text" },
-                values: new object[] { 1, new DateTime(2022, 5, 2, 9, 11, 58, 70, DateTimeKind.Local).AddTicks(2914), 0, 1, "This is comment 1" });
+                columns: new[] { "CommentId", "Created", "Likes", "PostId", "Text", "UserId" },
+                values: new object[] { 1, new DateTime(2022, 5, 2, 10, 22, 6, 182, DateTimeKind.Local).AddTicks(2498), 0, 1, "This is comment 1", "1" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -259,6 +265,11 @@ namespace student_platform.Migrations
                 name: "IX_Comments_PostId",
                 table: "Comments",
                 column: "PostId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Comments_UserId",
+                table: "Comments",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Posts_UserId",
