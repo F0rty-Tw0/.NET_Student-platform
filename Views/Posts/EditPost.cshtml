@@ -1,5 +1,4 @@
-@using student_platform.Models.Entities.Post;
-@model Post;
+@model student_platform.Models.Entities.Post.Post;
 
 @{
   ViewData["Title"] = "Edit";
@@ -22,6 +21,21 @@
 <div>
   <a asp-action="Index">Back to List</a>
 </div>
+
+@foreach (var comment in Model.Comments)
+{
+  <div class="row">
+    <div class="col-md-4">
+      <div>
+        @comment.User.Email
+      </div>
+      <div>
+        @comment.Text
+      </div>
+    </div>
+  </div>
+
+}
 
 @section Scripts {
 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

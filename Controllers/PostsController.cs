@@ -67,6 +67,7 @@ public class PostsController : Controller
   public IActionResult EditPost(int id)
   {
     Post p = _context.Posts.Include(x => x.Comments).ThenInclude(x => x.User).First(x => x.PostId == id);
+    
     return View(p);
   }
 
