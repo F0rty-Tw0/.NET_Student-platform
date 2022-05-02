@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace student_platform.Models.Entities.Post
 {
@@ -18,6 +19,11 @@ namespace student_platform.Models.Entities.Post
 
     public PostStatus Status { get; set; }
 
-    public List<Comment> Comments { get; set; }
+    public string UserId { get; set; }
+
+    #nullable enable
+    public IdentityUser? User { get; set; }
+
+    public List<Comment>? Comments { get; set; }
   }
 }

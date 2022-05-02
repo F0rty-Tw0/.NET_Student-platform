@@ -1,24 +1,16 @@
-using Microsoft.EntityFrameworkCore;
 using student_platform.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 string connectionString = builder.Configuration.GetConnectionString("StudentContext");
 
-builder.Services.AddDbContext<StudentsDBContext>(options =>
-    options.UseSqlite(connectionString));
-
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<StudentsDBContext>(); builder.Services.AddDbContext<StudentsDBContext>(options =>
-    options.UseSqlServer(connectionString));
-    
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddDbContext<StudentsDBContext>(options =>
-    options.UseSqlite(connectionString));
-
-
+builder.Services.AddDbContext<StudentsDBContext>(options => options.UseSqlite(connectionString));
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddDefaultUI()
+    .AddEntityFrameworkStores<StudentsDBContext>();
 
 var app = builder.Build();
 
@@ -37,6 +29,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

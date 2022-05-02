@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using student_platform.Data;
 
@@ -10,9 +11,10 @@ using student_platform.Data;
 namespace student_platform.Migrations
 {
     [DbContext(typeof(StudentsDBContext))]
-    partial class StudentsDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220502071158_initial")]
+    partial class initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.3");

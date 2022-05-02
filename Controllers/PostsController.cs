@@ -1,19 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
 using student_platform.Data;
 using student_platform.Models.Entities.Post;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace student_platform.Controllers;
-
+[Authorize]
 public class PostsController : Controller
 {
   private StudentsDBContext _context;
-  public PostsController(StudentsDBContext context)
+  private readonly UserManager<IdentityUser> _userManager;
+  public PostsController(StudentsDBContext context, UserManager<IdentityUser> userManager)
   {
-    this._context = context;
+    _context = context;
+    _userManager = userManager;
   }
+  [AllowAnonymous]
   public IActionResult Index()
   {
-    return View(_context.Posts.ToList());
+    var posts = from post in _context.Posts select post;
+
+    posts = posts.Include(y => y.User);
+
+
+    return View(posts.ToList());
   }
   public IActionResult Post()
   {
@@ -27,11 +38,13 @@ public class PostsController : Controller
   }
 
   [HttpPost]
-  public IActionResult AddPost([Bind("Title,Text")] Post post)
+  public async Task<IActionResult> AddPostAsync([Bind("Title,Text")] Post post)
   {
     if (ModelState.IsValid)
     {
+      IdentityUser user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
       post.Created = DateTime.Now;
+      post.UserId = user.Id;
       _context.Posts.Add(post);
       _context.SaveChanges();
       // save it to db
