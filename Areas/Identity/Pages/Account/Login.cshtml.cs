@@ -97,7 +97,7 @@ namespace student_platform.Areas.Identity.Pages.Account
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-
+            TempData["Route"] = "Login";
             ReturnUrl = returnUrl;
         }
 

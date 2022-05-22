@@ -19,6 +19,7 @@ namespace student_platform.Controllers
         public async Task<IActionResult> Index()
         {
             var studentContext = _context.Comments.Include(c => c.Post);
+            TempData["Route"] = "Chats";
             return View(await studentContext.ToListAsync());
         }
 

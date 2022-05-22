@@ -9847,19 +9847,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\art\\.nuget\\packages\\": {}
+    "C:\\Users\\artio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\student-platform.csproj",
+      "projectUniqueName": "C:\\Users\\artio\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\student-platform.csproj",
       "projectName": "student-platform",
-      "projectPath": "D:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\student-platform.csproj",
-      "packagesPath": "C:\\Users\\art\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\obj\\",
+      "projectPath": "C:\\Users\\artio\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\student-platform.csproj",
+      "packagesPath": "C:\\Users\\artio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\artio\\OneDrive\\Development\\School\\SEM4\\.NET\\student-platform\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\art\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\artio\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -9930,7 +9930,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

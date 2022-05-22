@@ -8,109 +8,133 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = student_platform
 build_property.RootNamespace = student_platform
-build_property.ProjectDir = D:\OneDrive\Development\School\SEM4\.NET\student-platform\
+build_property.ProjectDir = C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\OneDrive\Development\School\SEM4\.NET\student-platform
+build_property.MSBuildProjectDirectory = C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Create.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Chats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Collections/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Delete.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Details.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Edit.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Index.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Comments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Events/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/AddPost.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/AddPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcQWRkUG9zdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/EditPost.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/EditPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRWRpdFBvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/index.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/Post.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/Post.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcUG9zdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/_CreateEditPost.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Posts/_CreateEditPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcX0NyZWF0ZUVkaXRQb3N0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Shared/Error.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Privacy/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpdmFjeVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/PublicProfile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGljUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Shared/_NavBarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/_ViewImports.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Volunteers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50ZWVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/_ViewStart.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Shared/_Layout.cshtml]
+[C:/Users/artio/OneDrive/Development/School/SEM4/.NET/student-platform/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ikh3js24of

@@ -34,7 +34,7 @@ public class PostsController : Controller
       Posts = posts.ToList(),
       SearchString = SearchString
     };
-
+    TempData["Route"] = "Posts";
     return View(vm);
   }
   public IActionResult Post()
