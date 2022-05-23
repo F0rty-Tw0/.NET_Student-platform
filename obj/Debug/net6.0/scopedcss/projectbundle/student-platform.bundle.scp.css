@@ -1,3 +1,37 @@
+/* _content/student-platform/Views/Posts/index.cshtml.rz.scp.css */
+.post__page[b-8sxi9nk4n9] {
+  margin-top: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--dark-blue);
+}
+
+.post__page .table[b-8sxi9nk4n9] {
+  color: var(--dark-gray);
+}
+
+.post__page .table td[b-8sxi9nk4n9] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.post__page .table .table__text[b-8sxi9nk4n9] {
+  width: 30%;
+}
+
+.table__status .status__published[b-8sxi9nk4n9],
+.table__status .status__draft[b-8sxi9nk4n9] {
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+
+.status__published[b-8sxi9nk4n9] {
+  background-color: var(--active);
+}
+
+.status__draft[b-8sxi9nk4n9] {
+  background-color: var(--in-progress);
+}
 /* _content/student-platform/Views/Shared/_Layout.cshtml.rz.scp.css */
 .footer[b-ikh3js24of] {
   height: 30px;

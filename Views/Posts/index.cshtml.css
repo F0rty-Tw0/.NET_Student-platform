@@ -1,0 +1,33 @@
+.post__page {
+  margin-top: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--dark-blue);
+}
+
+.post__page .table {
+  color: var(--dark-gray);
+}
+
+.post__page .table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.post__page .table .table__text {
+  width: 30%;
+}
+
+.table__status .status__published,
+.table__status .status__draft {
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+
+.status__published {
+  background-color: var(--active);
+}
+
+.status__draft {
+  background-color: var(--in-progress);
+}

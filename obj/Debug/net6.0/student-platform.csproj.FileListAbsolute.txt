@@ -813,6 +813,7 @@ C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform\obj\Debug\
 C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform\obj\Debug\net6.0\student-platform.RazorAssemblyInfo.cs
 C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform\obj\Debug\net6.0\scopedcss\Views\Posts\index.cshtml.rz.scp.css
 C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform\obj\Debug\net6.0\scopedcss\bundle\student-platform.styles.css
 C:\Users\artio\OneDrive\Development\School\SEM4\.NET\student-platform\obj\Debug\net6.0\scopedcss\projectbundle\student-platform.bundle.scp.css

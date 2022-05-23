@@ -1,4 +1,3 @@
-/* _content/student-platform/Views/Posts/index.cshtml.rz.scp.css */
 .post__page[b-8sxi9nk4n9] {
   margin-top: 150px;
   padding: 20px;
@@ -31,8 +30,4 @@
 
 .status__draft[b-8sxi9nk4n9] {
   background-color: var(--in-progress);
-}
-/* _content/student-platform/Views/Shared/_Layout.cshtml.rz.scp.css */
-.footer[b-ikh3js24of] {
-  height: 30px;
 }
