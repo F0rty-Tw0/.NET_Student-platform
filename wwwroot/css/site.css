@@ -85,6 +85,27 @@ body {
 
 /* POST PAGE */
 
+.table__edit {
+  color: var(--regular-blue);
+  border-color: var(--regular-blue);
+}
+
+.table__comments {
+  text-decoration: none;
+  color: var(--regular-blue);
+}
+
+.buttons__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.activity__icon {
+  color: var(--regular-blue);
+}
+
 .post__button.btn {
   background-color: var(--regular-blue);
   border-radius: 5px;

@@ -21,8 +21,9 @@
 
 .table__status .status__published[b-8sxi9nk4n9],
 .table__status .status__draft[b-8sxi9nk4n9] {
-  padding: 5px 10px 5px 10px;
+  padding: 0px 10px 0px 10px;
   border-radius: 10px;
+  text-align: center;
 }
 
 .status__published[b-8sxi9nk4n9] {

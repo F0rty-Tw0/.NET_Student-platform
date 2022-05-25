@@ -1,85 +1,100 @@
 @model student_platform.Models.Entities.Post.PostIndexVm
 
 @{
-    ViewData["Title"] = "Posts";
+  ViewData["Title"] = "Posts";
 }
 <div class="post__page bg-white box-shadow">
-    <div class="d-flex justify-content-between">
-        <h2 class="me-5">Posts</h2>
-        <form asp-controller="Posts" asp-action="Index" method="get">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Search title" aria-label="Search title"
-                    aria-describedby="basic-addon2" name="SearchString" value="@Model.SearchString">
-                <div class="input-group-append">
-                    <input class="input-group-text" id="basic-addon2" type="submit" value="Search" />
-                </div>
-            </div>
-        </form>
-        <a asp-action="AddPost">
-            <button class="post__button btn justify-content-end">
-                New Post
-                <span class="fa-solid fa-circle-plus ms-5"></span>
-            </button>
-        </a>
-    </div>
+  <div class="d-flex justify-content-between">
+    <h2 class="me-5">Posts</h2>
+    <form asp-controller="Posts" asp-action="Index" method="get">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search title" aria-label="Search title"
+          aria-describedby="basic-addon2" name="SearchString" value="@Model.SearchString">
+        <div class="input-group-append">
+          <input class="input-group-text" id="basic-addon2" type="submit" value="Search" />
+        </div>
+      </div>
+    </form>
+    <a asp-action="AddPost">
+      <button class="post__button btn justify-content-end">
+        New Post
+        <span class="fa-solid fa-circle-plus ms-5"></span>
+      </button>
+    </a>
+  </div>
 
 
 
 
-    <table class="table table-borderless">
-        <thead>
-            <tr>
-                <th scope="col">
-                    @Html.DisplayNameFor(model => model.Posts.First().Title)
-                </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(model => model.Posts.First().Text)
-                </th scope="col">
-                <th>
-                    @Html.DisplayNameFor(model => model.Posts.First().Created)
-                </th>
-                <th>
-                    Activity
-                </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(model => model.Posts.First().Status)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Posts)
-            {
-                <tr>
-                    <td class="table__text">
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </td>
-                    <td class="table__text">
-                        @Html.DisplayFor(modelItem => item.Text)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Created)
-                    </td>
-                    <td>
-                        <span class="fa-solid fa-thumbs-up"></span>
-                        <span class="me-2">5</span>
-                        <span class="fa-solid fa-comment-dots"></span>
-                        <span>10</span>
-                    </td>
-                    <td class="table__status">
-                        <span class="@(Html.ValueFor(modelItem => item.Status).Equals("DRAFT") ? "status__draft"
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">
+          @Html.DisplayNameFor(model => model.Posts.First().Title)
+        </th>
+        <th scope="col">
+          @Html.DisplayNameFor(model => model.Posts.First().Text)
+        </th scope="col">
+        <th>
+          @Html.DisplayNameFor(model => model.Posts.First().Created)
+        </th>
+        <th>
+          Activity
+        </th>
+        <th scope="col">
+          @Html.DisplayNameFor(model => model.Posts.First().Status)
+        </th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (var item in Model.Posts)
+      {
+        <tr>
+          <td class="table__text">
+            @Html.DisplayFor(modelItem => item.Title)
+          </td>
+          <td class="table__text">
+            @Html.DisplayFor(modelItem => item.Text)
+          </td>
+          <td>
+            @Html.DisplayFor(modelItem => item.Created)
+          </td>
+          <td>
+            <span class="fa-solid fa-thumbs-up activity__icon"></span>
+            <span class="me-2">5</span>
+            <a class="table__comments" asp-area="" asp-controller="Comments" asp-action="Index">
+              <span class="fa-solid fa-comment-dots activity__icon"></span>
+              <span>
+                @* @if (item.Comments == null)
+                  {
+                  <span>0</span>
+                  } *@
+                @foreach (var comment in item.Comments)
+                {
+                  <span> </span>
+                }
+                @Html.DisplayFor(modelItem => item.Comments.Count)
+              </span>
+            </a>
+          </td>
+          <td class="table__status">
+            <div class="@(Html.ValueFor(modelItem => item.Status).Equals("DRAFT") ? "status__draft"
                     : "status__published")">
-                            @Html.DisplayFor(modelItem => item.Status)
-                        </span>
-                    </td>
-                    <td>
-                        <a asp-action="EditPost" asp-route-id="@item.PostId"><span class="fa-solid fa-pen me-2"></span></a>
-                        <a asp-action="Details" asp-route-id="@item.PostId"><span
-                            class="fa-solid fa-circle-info  me-2"></span></a>
-                        <a asp-action="Delete" asp-route-id="@item.PostId"><span class="fa-solid fa-trash me-2"></span></a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+              @Html.DisplayFor(modelItem => item.Status)
+            </div>
+          </td>
+          <td>
+            <div class="buttons__container">
+              <a class="btn btn-outline-info table__edit" asp-action="EditPost" asp-route-id="@item.PostId">Edit</a>
+              <a class="activity__icon" asp-action="Details" asp-route-id="@item.PostId"><span
+                class="fa-solid fa-circle-info  me-2"></span></a>
+              <a class="activity__icon" asp-action="Delete" asp-route-id="@item.PostId"><span
+                class="fa-solid fa-trash me-2"></span></a>
+            </div>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
 </div>

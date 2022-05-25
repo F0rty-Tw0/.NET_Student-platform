@@ -20,8 +20,9 @@
 
 .table__status .status__published,
 .table__status .status__draft {
-  padding: 5px 10px 5px 10px;
+  padding: 0px 10px 0px 10px;
   border-radius: 10px;
+  text-align: center;
 }
 
 .status__published {

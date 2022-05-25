@@ -6,49 +6,49 @@
   <hr>
   <ul class="nav nav-pills flex-column mb-auto side-nav__menu">
     <li class="nav-item">
-      <a class="@(TempData["Route"] == "Dashboard" ? "active" : "") nav-link d-flex align-items-center"
+      <a class="@(TempData["Route"].ToString() == "Dashboard" ? "active" : "") nav-link d-flex align-items-center"
         aria-current="page" asp-area="" asp-controller="Dashboard" asp-action="Index">
         <span class="fa-solid fa-square-poll-vertical nav__icon"></span>
         <span>Dashboard</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="@(TempData["Route"] == "PublicProfile" ? "active" : "") nav-link d-flex align-items-center"
+      <a class="@(TempData["Route"].ToString() == "PublicProfile" ? "active" : "") nav-link d-flex align-items-center"
         asp-area="" asp-controller="PublicProfile" asp-action="Index">
         <span class="fa-solid fa-address-card nav__icon"></span>
         <span>Public Profile</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="@(TempData["Route"] == "Events" ? "active" : "") nav-link d-flex align-items-center"
+      <a class="@(TempData["Route"].ToString() == "Events" ? "active" : "") nav-link d-flex align-items-center"
         asp-area="" asp-controller="Events" asp-action="Index">
         <span class="fa-solid fa-calendar-day nav__icon"></span>
         <span>Events</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="@(TempData["Route"] == "Posts" ? "active" : "") nav-link d-flex align-items-center"
+      <a class="@(TempData["Route"].ToString() == "Posts" ? "active" : "") nav-link d-flex align-items-center"
         asp-area="" asp-controller="Posts" asp-action="Index">
         <span class="fa-solid fa-newspaper nav__icon"></span>
         <span>Posts</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="@(TempData["Route"] == "Collections" ? "active" : "" ) nav-link d-flex align-items-center"
+      <a class="@(TempData["Route"].ToString() == "Collections" ? "active" : "" ) nav-link d-flex align-items-center"
         asp-area="" asp-controller="Collections" asp-action="Index">
         <span class="fa-solid fa-table-cells-large nav__icon"></span>
         <span>Collections</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="@(TempData["Route"] == "Chats" ? "active" : "") nav-link d-flex align-items-center"
+      <a class="@(TempData["Route"].ToString() == "Chats" ? "active" : "") nav-link d-flex align-items-center"
         asp-area="" asp-controller="Comments" asp-action="Index">
         <span class="fa-solid fa-comments nav__icon"></span>
-        <span>Chats</span>
+        <span>Comments</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="@(TempData["Route"] == "Volunteers" ? "active" : "") nav-link d-flex align-items-center"
+      <a class="@(TempData["Route"].ToString() == "Volunteers" ? "active" : "") nav-link d-flex align-items-center"
         asp-area="" asp-controller="Volunteers" asp-action="Index">
         <span class="fa-solid fa-user-group nav__icon"></span>
         <span>Volunteers</span>

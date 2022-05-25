@@ -14,11 +14,11 @@ namespace student_platform.Data
     {
       base.OnModelCreating(builder);
       this.SeedPosts(builder);
-      this.UsersSeed(builder);
+      this.SeedUsers(builder);
       this.SeedPostComments(builder);
     }
 
-    private void UsersSeed(ModelBuilder builder)
+    private void SeedUsers(ModelBuilder builder)
     {
       var user1 = new IdentityUser
       {
