@@ -1,10 +1,3 @@
-.post__page {
-  margin-top: 150px;
-  padding: 20px;
-  border-radius: 10px;
-  color: var(--dark-blue);
-}
-
 .post__page .table {
   color: var(--dark-gray);
 }

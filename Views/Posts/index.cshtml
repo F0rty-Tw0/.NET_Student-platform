@@ -3,7 +3,7 @@
 @{
   ViewData["Title"] = "Posts";
 }
-<div class="post__page bg-white box-shadow">
+<div class="page__container bg-white box-shadow">
   <div class="d-flex justify-content-between">
     <h2 class="me-5">Posts</h2>
     <form asp-controller="Posts" asp-action="Index" method="get">
@@ -16,7 +16,7 @@
       </div>
     </form>
     <a asp-action="AddPost">
-      <button class="post__button btn justify-content-end">
+      <button class="action__button btn justify-content-end">
         New Post
         <span class="fa-solid fa-circle-plus ms-5"></span>
       </button>
