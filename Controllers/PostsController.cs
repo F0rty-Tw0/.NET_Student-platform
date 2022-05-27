@@ -39,11 +39,13 @@ public class PostsController : Controller
   public IActionResult Post()
   {
     ViewBag.name = "Art";
+    TempData["Route"] = "Posts";
     return View();
 
   }
   public IActionResult AddPost()
   {
+    TempData["Route"] = "Posts";
     return View();
   }
 
@@ -94,9 +96,10 @@ public class PostsController : Controller
   {
     if (ModelState.IsValid)
     {
+      post.Created = DateTime.Now;
       _context.Posts.Update(post);
       _context.SaveChanges();
-      return RedirectToAction("Index");
+      return RedirectToAction("Post");
     }
     return View();
   }

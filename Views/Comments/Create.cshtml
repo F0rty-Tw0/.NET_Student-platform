@@ -1,47 +1,47 @@
 @model student_platform.Models.Entities.Post.Comment
 
 @{
-    ViewData["Title"] = "Create";
+  ViewData["Title"] = "Create Comment";
 }
 
-<h1>Create</h1>
+<div class="d-flex justify-content-center">
+  <section class="page__container bg-white box-shadow content__container">
+    <h2>Create Comment</h2>
+    <hr />
 
-<h4>Comment</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Text" class="control-label"></label>
-                <input asp-for="Text" class="form-control" />
-                <span asp-validation-for="Text" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Likes" class="control-label"></label>
-                <input asp-for="Likes" class="form-control" />
-                <span asp-validation-for="Likes" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PostId" class="control-label"></label>
-                <select asp-for="PostId" class ="form-control" asp-items="ViewBag.PostId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Created" class="control-label"></label>
-                <input asp-for="Created" class="form-control" />
-                <span asp-validation-for="Created" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+    <form asp-action="Create">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+      <div class="form-group mb-3">
+        <label asp-for="Text" class="control-label"></label>
+        <input asp-for="Text" class="form-control" />
+        <span asp-validation-for="Text" class="text-danger"></span>
+      </div>
+      <div class="form-group mb-3">
+        <label asp-for="Likes" class="control-label"></label>
+        <input asp-for="Likes" class="form-control" />
+        <span asp-validation-for="Likes" class="text-danger"></span>
+      </div>
+      <div class="form-group mb-3">
+        <label asp-for="Post" class="control-label"></label>
+        <select asp-for="PostId" class="form-control" asp-items="ViewBag.PostId"></select>
+      </div>
+      <div class="form-group mb-3">
+        <label asp-for="Created" class="control-label"></label>
+        <input asp-for="Created" class="form-control" />
+        <span asp-validation-for="Created" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Create" class="w-100 btn btn-lg action__button mt-3" />
+      </div>
+    </form>
+
+    <div>
+      <a class="generic__links" asp-action="Index">Back to List</a>
     </div>
+  </section>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

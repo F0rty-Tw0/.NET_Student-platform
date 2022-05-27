@@ -1,53 +1,65 @@
 @model IEnumerable<student_platform.Models.Entities.Post.Comment>
 
 @{
-    ViewData["Title"] = "Index";
+  ViewData["Title"] = "Comments";
 }
+<div class="page__container bg-white box-shadow">
+  <div class="d-flex justify-content-between">
+    <h2 class="me-5">Comments</h2>
+    <a asp-action="Create">
+      <button class="action__button btn justify-content-end"> New Comment <span
+          class="fa-solid fa-circle-plus ms-2"></span></button>
+      </button>
+    </a>
+  </div>
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+  <table class="table table-borderless">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Text)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Likes)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Post)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Created)
-            </th>
-            <th></th>
-        </tr>
+      <tr>
+        <th scope="col">
+          @Html.DisplayNameFor(model => model.Text)
+        </th>
+        <th scope="col">
+         Belongs to @Html.DisplayNameFor(model => model.Post)
+        </th>
+        <th scope="col">
+          @Html.DisplayNameFor(model => model.Likes)
+        </th>
+        <th scope="col">
+          @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th></th>
+      </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+      @foreach (var item in Model)
+      {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Text)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Likes)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Post.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Created)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CommentId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CommentId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CommentId">Delete</a>
-            </td>
+          <td class="table__text">
+            @Html.DisplayFor(modelItem => item.Text)
+          </td>
+
+          <td class="table__text">
+            @Html.DisplayFor(modelItem => item.Post.Title)
+          </td>
+          <td>
+            <span class="fa-solid fa-thumbs-up activity__icon"></span>
+            @Html.DisplayFor(modelItem => item.Likes)
+          </td>
+          <td>
+            @Html.DisplayFor(modelItem => item.Created)
+          </td>
+          <td>
+            <div class="buttons__container">
+              <a class="btn btn-outline-info table__edit" asp-action="Edit" asp-route-id="@item.CommentId">Edit</a>
+              <a class="activity__icon" asp-action="Details" asp-route-id="@item.CommentId"><span
+                class="fa-solid fa-circle-info  me-2"></span></a>
+              <a class="activity__icon" asp-action="Delete" asp-route-id="@item.CommentId"><span
+                class="fa-solid fa-trash me-2"></span></a>
+            </div>
+          </td>
         </tr>
-}
+      }
     </tbody>
-</table>
+  </table>
+</div>

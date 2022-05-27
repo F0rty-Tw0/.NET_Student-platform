@@ -45,6 +45,33 @@ body {
 .page__main {
   flex-grow: 1;
 }
+.content__container {
+  min-width: 500px;
+}
+
+.table__status .status__published,
+.table__status .status__draft {
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.table {
+  color: var(--dark-gray);
+}
+
+.table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.table__text {
+  width: 30%;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 /* TOP NAVBAR */
 
@@ -126,19 +153,10 @@ body {
   cursor: pointer;
 }
 
-.disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
 /* AUTH */
-.auth__links {
+.generic__links {
   color: var(--dark-blue);
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
-}
-
-.auth__container {
-  min-width: 500px;
 }

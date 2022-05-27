@@ -6,7 +6,7 @@
 }
 
 <div class="d-flex justify-content-center">
-  <section class="page__container bg-white box-shadow auth__container">
+  <section class="page__container bg-white box-shadow content__container">
     <h1 class="mt-3 mb-5 text-center text-uppercase">@ViewData["Title"]</h1>
     <form id="account" method="post">
       <p>Use a local account to log in.</p>
@@ -33,9 +33,9 @@
         <button id="login-submit" type="submit" class="w-100 btn btn-lg action__button mb-3">Login</button>
       </div>
       <div class="text-center d-grid">
-        <a class="auth__links" id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-        <a class="auth__links" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-        <a class="auth__links" id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email
+        <a class="generic__links" id="forgot-password" asp-page="./Login">Forgot your password?</a>
+        <a class="generic__links" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+        <a class="generic__links" id="resend-confirmation" asp-page="./Login">Resend email
           confirmation</a>
       </div>
     </form>
